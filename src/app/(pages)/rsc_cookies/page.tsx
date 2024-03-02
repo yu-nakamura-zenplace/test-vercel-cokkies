@@ -3,7 +3,8 @@ import {
   deleteCookie,
   readCookie,
   writeCookie
-} from "@/app/rsc_cookies/actions";
+} from "./actions";
+import { classnames } from "@/app/classnames";
 
 
 export default function Page() {
@@ -16,7 +17,7 @@ export default function Page() {
           const result = await writeCookie();
           console.log("result", result);
         }}>
-          <button>Cookie書き込み</button>
+          <button className={classnames.btn}>Cookie書き込み</button>
         </form>
       </li>
       <li>
@@ -25,7 +26,7 @@ export default function Page() {
           const result = await readCookie();
           console.log("result", result);
         }}>
-          <button>Cookie読み取り</button>
+          <button className={classnames.btn}>Cookie読み取り</button>
         </form>
       </li>
       <li>
@@ -34,7 +35,7 @@ export default function Page() {
           const result = await deleteCookie();
           console.log("result", result);
         }}>
-          <button>Cookie削除</button>
+          <button className={classnames.btn}>Cookie削除</button>
         </form>
       </li>
     </ul>
