@@ -4,12 +4,11 @@ import {
   readCookie,
   writeCookie
 } from "./actions";
-import { classnames } from "@/app/classnames";
-
+import { classnames } from "@/_shared/classnames";
 
 export default function Page() {
   return <main>
-    <h2>RSC(ReactServerComponent)Cookies</h2>
+    <h2>RSC(React Server Component)Cookies</h2>
     <ul>
       <li>
         <form onSubmit={async event => {

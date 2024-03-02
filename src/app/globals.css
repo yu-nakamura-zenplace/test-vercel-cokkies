@@ -5,9 +5,18 @@
 p {
   @apply mb-4;
 }
+a {
+  @apply font-medium text-blue-600 dark:text-blue-500 hover:underline;
+}
 h1 {
-  @apply mb-4 text-3xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl;
+  @apply mb-4 text-3xl font-extrabold md:text-5xl lg:text-6xl;
 }
 h2 {
-  @apply mb-4 text-2xl font-extrabold text-gray-900 md:text-5xl lg:text-6xl;
+  @apply mb-4 text-2xl font-extrabold md:text-5xl lg:text-6xl;
+}
+h3 {
+  @apply mb-4 text-xl font-extrabold md:text-5xl lg:text-6xl;
+}
+h4 {
+  @apply mb-4 text-lg font-extrabold md:text-5xl lg:text-6xl;
 }

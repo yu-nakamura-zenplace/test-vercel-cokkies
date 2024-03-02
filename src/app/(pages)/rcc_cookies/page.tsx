@@ -4,7 +4,8 @@ import {
   readCookie,
   writeCookie
 } from "./functions";
-import { classnames } from "@/app/classnames";
+import { classnames } from "@/_shared/classnames";
+
 
 
 export default function Page() {
