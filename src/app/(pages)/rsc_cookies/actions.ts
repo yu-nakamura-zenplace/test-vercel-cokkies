@@ -4,7 +4,9 @@ import { cookies } from "next/headers";
 
 export async function writeCookie() {
   const data = "use server cookies";
-  cookies().set("authJwt", data);
+  cookies().set("authJwt", data, {
+    httpOnly: false,
+  });
   console.log("writeCookies.authJwt", data);
   return cookies().get("authJwt");
 }

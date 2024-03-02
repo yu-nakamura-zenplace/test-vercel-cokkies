@@ -10,7 +10,7 @@ import { classnames } from "@/_shared/classnames";
 
 export default function Page() {
   return <main>
-    <h2>RSC(React Client Component)Cookies</h2>
+    <h2>RCC(React Client Component)Cookies</h2>
     <ul>
       <li>
         <form onSubmit={async event => {
